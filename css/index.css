@@ -1,0 +1,87 @@
+/* --------------------- default --------------------- */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+    background-color: #000;
+	color: white;
+}
+
+/* --------------------- page --------------------- */
+
+.page{
+	/*border: 1px solid white;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+/* --------------------- main --------------------- */
+
+.main{
+	display: flex;
+	flex-direction: column;
+}
+.main_title{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-bottom: 7em;
+}
+.main_title .main_text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 3em;
+}
+.main_title .main_text h1{
+	font-size: 2.3em;
+	font-style: italic;
+	margin-bottom: .2em;
+	padding-left: .3em;
+	border-left: .07em solid white;
+	/*border: .07em solid white;*/
+}
+.main_title .main_text h2{
+	font-size: 1.3em;
+	font-weight: 500;
+	padding-left: .7em;
+	margin-bottom: .7em;
+}
+
+.main_start{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: max-content;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.main_start h2{
+	font-size: 1.5em;
+}
+.main_start h1{
+	font-size: 1.8em;
+	padding: .1em 1em;
+	margin-left: 1em;
+	border: .08em solid #59B2AD;
+	border-radius: .5em;
+	transition: all .3s;
+}
+.main_start h1:hover{
+	background-color: #59B2AD;
+}
