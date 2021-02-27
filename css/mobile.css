@@ -1,0 +1,48 @@
+@media screen and (max-width: 40em){
+
+/* --------------------- main --------------------- */
+
+	.main_title{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 4em;
+	}
+	.main_title .main_text{
+		margin-top: 2em;
+		margin-left: 0;
+	}
+	.main_title .main_text h1{
+		display: none;
+	}
+	.main_title .main_text h2{
+		font-size: 1em;
+		padding-left: 0;
+		padding-top: .8em;
+		border-top: .07em solid white;
+	}
+
+	.main_start{
+		margin: 0;
+	}
+
+	.main_start h2{
+		display: none;
+	}
+	.main_start h1{
+		margin: 0;
+	}
+
+/* --------------------- question --------------------- */
+
+	.question .quest_text_box .quest_no{
+		font-size: 13vw;
+	}
+	.question .quest_text_box .quest_text{
+		word-break: break-all;
+		font-size: 4vw;
+	}
+}
+
+.hide{
+	display: none;
+}
