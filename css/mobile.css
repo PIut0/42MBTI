@@ -41,6 +41,19 @@
 		word-break: break-all;
 		font-size: 4vw;
 	}
+
+/* --------------------- result --------------------- */
+
+	.result h1{
+		font-size: 6vw;
+		font-weight: 700;
+		margin-bottom: .4em;
+	}
+	.result h2{
+		font-size: 3.3vw;
+		font-weight: 500;
+	}
+
 }
 
 .hide{

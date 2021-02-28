@@ -16,6 +16,7 @@ body{
 	/*max-width: 10em;*/
     background-color: #000;
 	color: white;
+	/*overflow: hidden;*/
 }
 
 /* --------------------- page --------------------- */
@@ -85,6 +86,7 @@ body{
 	font-size: 1.5em;
 }
 .main_start h1{
+	margin-top: .5em;
 	margin-left: 2em;
 }
 
@@ -192,6 +194,62 @@ body{
 }
 .question .quest_select input[value="4"]:checked ~ .quest_select_bar .progress{
 	width: 100%;
+	background-color: #59B2AD;
+}
+
+/* --------------------- result --------------------- */
+
+.result{
+	position: relative;
+	width: calc(100vw - 6em);
+	max-width: 30em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4em;
+}
+
+.result img{
+	width: 66%;
+	max-width: 20em;
+	margin-bottom: 2em;
+}
+.result h1{
+	font-size: 1.7em;
+	font-weight: 700;
+	margin-bottom: .4em;
+}
+.result h2{
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.study {
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+.study a{
+	color: white;
+	text-decoration: none;
+}
+
+.study_btn{
+	font-size: 1em;
+	font-weight: 700;
+	padding: .4em 1.8em;
+	border-radius: 1.3em;
+	width: max-content;
+	border: .01em solid #f7fff7;
+	box-shadow:
+	0 0 .01em .03em #f7fff7,
+	0 0 .04em .06em #8ec0d2,
+	0 0 .4em .1em #59a5b2,
+	inset 0 0 .04em .06em #8ed2ce,
+	inset 0 0 .4em .1em #59b2ad;
+	transition: background-color .3s
+}
+.study_btn:hover{
 	background-color: #59B2AD;
 }
 

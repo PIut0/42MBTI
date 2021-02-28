@@ -18,14 +18,22 @@ let next = (index) => {
 }
 
 let get_result = (result) => {
-	console.log(result);
+	let score = result.reduce((a,b)=>(a+b));
+	let result_list = document.querySelectorAll('.result');
+	console.log(score);
+	if (score <= 8)
+		result_list[0].classList.remove('hide');
+	else if (score <= 13)
+		result_list[1].classList.remove('hide');
+	else
+		result_list[2].classList.remove('hide');
 }
 
 let next_btn_list = document.querySelectorAll('.next_btn');
 next_btn_list.forEach((value, index)=>{
 	value.addEventListener('click', ()=>{
-		next(index);
 		if (index == next_btn_list.length - 1)
 			get_result(result);
+		next(index);
 	});
 })
