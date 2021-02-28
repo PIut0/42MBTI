@@ -23,7 +23,7 @@ let get_result = (result) => {
 	console.log(score);
 	if (score <= 8)
 		result_list[0].classList.remove('hide');
-	else if (score <= 13)
+	else if (score <= 12)
 		result_list[1].classList.remove('hide');
 	else
 		result_list[2].classList.remove('hide');
