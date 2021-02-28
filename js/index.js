@@ -37,3 +37,11 @@ next_btn_list.forEach((value, index)=>{
 		next(index);
 	});
 })
+
+window.onload = () => {
+
+var agent = navigator.userAgent.toLowerCase();
+	if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+		alert("다른 브라우저를 이용해주세요 제발 ㅠ \n   - 불쌍한 개발자 klim 의 간곡한 부탁");
+	}
+}
